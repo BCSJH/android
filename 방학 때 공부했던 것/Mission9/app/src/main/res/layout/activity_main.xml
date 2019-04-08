@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+<RelativeLayout
+    android:id="@+id/relativeLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="15dp"
+
+    >
+<TextView
+    android:id="@+id/textView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="고객정보 추가"
+    android:textSize="20dp"
+    />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_marginLeft="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="명 수"
+        android:textSize="20dp"
+        />
+
+
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        >
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="80pt"
+            android:layout_height="wrap_content"
+            android:hint="이름" />
+
+        <EditText
+            android:id="@+id/birthday"
+            android:layout_width="80pt"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@id/name"
+            android:hint="생년월일" />
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/tel"
+        android:layout_width="150pt"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:hint="전화번호"/>
+<Button
+    android:id="@+id/add"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:textSize="20dp"
+    android:text="추가"/>
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></ListView>
+</LinearLayout>

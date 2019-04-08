@@ -1,0 +1,175 @@
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+
+    android:gravity="center_horizontal"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+
+        android:id="@+id/layout_form"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+
+        android:layout_centerVertical="true"
+
+        android:layout_marginTop="30dp"
+
+        >
+
+
+
+        <TextView
+
+            android:id="@+id/viewText_name"
+
+            android:text="이      름"
+
+            android:textSize="20dp"
+
+            android:layout_width="100dp"
+
+            android:layout_height="34dp"
+
+            android:layout_marginRight="10dp"
+
+            android:gravity="center_horizontal"
+
+            />
+
+
+
+        <EditText
+
+            android:id="@+id/text_name"
+
+            android:layout_width="150dp"
+
+            android:layout_height="wrap_content"
+
+            android:layout_toRightOf="@+id/viewText_name"
+
+            android:layout_alignBaseline="@+id/viewText_name"
+
+            android:maxLength="20"
+
+            android:maxLines="1"
+
+            android:inputType="text|textCapWords"
+
+            />
+
+
+
+        <TextView
+
+            android:id="@+id/viewText_age"
+
+            android:text="나      이"
+
+            android:textSize="20dp"
+
+            android:layout_width="100dp"
+
+            android:layout_height="34dp"
+
+            android:layout_marginRight="10dp"
+
+            android:layout_below="@id/viewText_name"
+
+            android:gravity="center_horizontal"
+
+            />
+
+
+
+        <EditText
+
+            android:id="@+id/text_age"
+
+            android:layout_width="150dp"
+
+            android:layout_height="wrap_content"
+
+            android:layout_toRightOf="@+id/viewText_age"
+
+            android:layout_alignBaseline="@+id/viewText_age"
+
+            android:maxLength="3"
+
+            android:maxLines="1"
+
+            android:inputType="number"
+
+            />
+
+
+
+        <TextView
+
+            android:id="@+id/viewText_birthday"
+
+            android:text="생년월일"
+
+            android:layout_width="100dp"
+
+            android:layout_height="34dp"
+
+            android:layout_marginRight="10dp"
+
+            android:layout_below="@id/viewText_age"
+
+            android:textSize="20dp"
+
+            android:gravity="center_horizontal"
+
+            />
+
+    </RelativeLayout>
+
+
+
+    <Button
+
+        android:id="@+id/button_birthday"
+
+        android:layout_width="200dp"
+
+        android:layout_height="wrap_content"
+
+        android:onClick="onButtonBirthdayClicked"
+
+        />
+
+
+
+    <Button
+
+        android:id="@+id/button_save"
+
+        android:text="저 장"
+
+        android:onClick="onButtonLoginClicked"
+
+        android:layout_width="100dp"
+
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginTop="20dp"
+
+        />
+
+</LinearLayout>

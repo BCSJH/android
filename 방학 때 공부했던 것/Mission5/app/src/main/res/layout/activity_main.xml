@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <TableLayout>
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="467dp"
+                android:layout_height="56dp"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="200dp"
+                tools:layout_editor_absoluteY="500dp" />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="800dp"
+                android:layout_height="56dp"
+                android:ems="10"
+                android:inputType="textPassword"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="200dp"
+                tools:layout_editor_absoluteY="500dp" />
+
+
+        </TableLayout>
+
+        <Button
+            android:layout_width="113dp"
+            android:layout_height="match_parent"
+            android:background="#2f9d27"
+            android:baselineAligned="false"
+            android:onClick="onCButton1licked"
+            android:text="로그인"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.872"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.408" />
+    </TableRow>
+</TableLayout>
